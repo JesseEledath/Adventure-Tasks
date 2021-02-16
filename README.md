@@ -57,8 +57,9 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 - Have users POST tasks
 - Render tasks
-- Edit task positions
+- Edit tasks/Delete them
 - Make a level up system
+- Completing tasks give levels
 
 #### PostMVP  
 
@@ -82,16 +83,24 @@ Show us a snippet of JSON returned by your Airtable (you can find it under the A
 
 | Component | Priority | Estimated Time | Time Invested | Actual Time |
 | --- | :---: |  :---: | :---: | :---: |
-| Adding Form | H | 3hrs| 3.5hrs | 3.5hrs |
-| Working with API | H | 3hrs| 2.5hrs | 2.5hrs |
-| Total | H | 6hrs| 5hrs | 5hrs |
+| Initial React set up + API key | H | 1hrs|  |  |
+| Working with API/creating info | H | 3hrs|  |  |
+| Adding Form/requests | H | 3hrs|  | |
+| Creating Tasks/formatting them| H | 3hrs|  |  |
+| Creating sample Bio/Tasks | H | 3hrs|  |  |
+| Making Sidebar | H | 3hrs|  |  |
+| Adding EXP elements | H | 5hrs|  |  |
+| Making titles| H | 3hrs|  |  |
+| Adding Mobile hambuger menue | H | 5hrs|  |  |
+| Total | H | 29hrs|  | |
 
 ## SWOT Analysis
 
 ### Strengths:
-
+I feel good about the wrieframe/ hierarchy and now know what to do in the order that it should be done.
 ### Weaknesses:
-
+I can imagine me getting hung up on the finer details and not being as timely with the core objectives.
 ### Opportunities:
-
+?
 ### Threats:
+?
