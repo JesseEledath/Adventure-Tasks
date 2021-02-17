@@ -28,6 +28,9 @@ function App() {
       <Route path="/new" >
         <Form tasks={tasks} setToggleFetch={ setToggleFetch}/>
       </Route>
+      <Route path="/edit/:id">
+        <Form tasks={tasks} setToggleFetch={setToggleFetch} />
+      </Route>
     </div>
   );
 }

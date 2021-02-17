@@ -53,7 +53,7 @@ function Form(props) {
         id="exp"
         type="number"
         value={exp}
-        onChange={(e) => setExp(e.target.value)}
+        onChange={(e) => setExp(e.target.valueAsNumber)}
       />
       <label htmlFor="description">Description of task: </label>
       <textarea
