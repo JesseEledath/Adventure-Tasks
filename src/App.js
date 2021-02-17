@@ -24,6 +24,7 @@ function App() {
 
   return (
     <div className="App">
+      <h3>Hello</h3>
       <Route path="/new" >
         <Form tasks={tasks} setToggleFetch={ setToggleFetch}/>
       </Route>

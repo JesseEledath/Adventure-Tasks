@@ -27,6 +27,7 @@ function Form(props) {
       task,
       exp,
       description,
+      user,
     };
     if (params.id) {
       const taskURL = `${baseURL}/${params.id}`;
@@ -47,19 +48,19 @@ function Form(props) {
         value={task}
         onChange={(e) => setTask(e.target.value)}
       />
-      <label htmlFor="description">Description of task: </label>
-      <textarea
-        id="description"
-        type="text"
-        value={description}
-        onChange={(e) => setDescription(e.target.value)}
-      />
       <label htmlFor="exp">Experince value of task: </label>
       <input
         id="exp"
-        type="text"
+        type="number"
         value={exp}
         onChange={(e) => setExp(e.target.value)}
+      />
+      <label htmlFor="description">Description of task: </label>
+      <textarea
+        id="description"
+        type="textarea"
+        value={description}
+        onChange={(e) => setDescription(e.target.value)}
       />
       <label htmlFor="user">What is your name? </label>
       <input
