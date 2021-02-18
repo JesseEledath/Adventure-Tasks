@@ -24,7 +24,17 @@ function App() {
 
   return (
     <div className="App">
-      <h3>Hello</h3>
+      <Route exact path="/">
+        <div className="reviews-container">
+          {tasks.map((task) => (
+            <Task
+              key={task.id}
+              task={task}
+              setToggleFetch={setToggleFetch}
+            />
+          ))}
+        </div>
+      </Route>
       <Route path="/new" >
         <Form tasks={tasks} setToggleFetch={ setToggleFetch}/>
       </Route>
