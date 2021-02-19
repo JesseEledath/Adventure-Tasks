@@ -9,7 +9,8 @@ import Form from "./components/Form";
 import Level from "./components/Level";
 import MobileHamburger from "./components/MobileHamburger";
 import NewTaskButton from "./components/NewTaskButton";
-import Task from "./components/Task";
+import TaskInfo from "./components/TaskInfo";
+import DisplayedTasks from "./components/DisplayedTasks";
 function App() {
   const [toggleFetch, setToggleFetch] = useState(false);
   const [tasks, setTasks] = useState([]);
@@ -25,15 +26,10 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/">
-        <div className="reviews-container">
-          {tasks.map((task) => (
-            <Task
-              key={task.id}
-              task={task}
-              setToggleFetch={setToggleFetch}
-            />
-          ))}
-        </div>
+        <DisplayedTasks tasks={tasks} setToggleFetch={ setToggleFetch}/>
+      </Route>
+      <Route path="/:id">
+        <TaskInfo tasks = {tasks} setToggleFetch={ setToggleFetch}/>
       </Route>
       <Route path="/new" >
         <Form tasks={tasks} setToggleFetch={ setToggleFetch}/>

@@ -2,14 +2,16 @@ import { useEffect, useState } from "react";
 import { useHistory, useParams } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
+// Function =============================================
 function Form(props) {
+// States =============================================
   const [task, setTask] = useState("");
   const [exp, setExp] = useState("");
   const [description, setDescription] = useState("");
   const [user, setUser] = useState("");
   const history = useHistory();
   const params = useParams();
-
+// UseEffect ============================================
   useEffect(() => {
     if (props.tasks.length > 0 && params.id) {
       const foundTask = props.tasks.find((task) => params.id === task.id);
