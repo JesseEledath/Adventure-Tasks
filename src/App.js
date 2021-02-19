@@ -25,13 +25,13 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NewTaskButton />
-        <DisplayedTasks tasks={tasks} setToggleFetch={ setToggleFetch}/>
+        <DisplayedTasks tasks={tasks} setToggleFetch={setToggleFetch} />
       </Route>
-      <Route exact path="/new" >
-        <Form tasks={tasks} setToggleFetch={ setToggleFetch}/>
+      <Route exact path="/new">
+        <Form tasks={tasks} setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/task/:id">
-        <TaskInfo tasks = {tasks} setToggleFetch={ setToggleFetch}/>
+        <TaskInfo tasks={tasks} setToggleFetch={setToggleFetch} />
       </Route>
       <Route path="/edit/:id">
         <Form tasks={tasks} setToggleFetch={setToggleFetch} />

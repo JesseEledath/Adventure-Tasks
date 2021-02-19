@@ -1,10 +1,9 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import EditButton from "./EditButton";
-import DoneButton from "./DoneButton"
+import DoneButton from "./DoneButton";
 // Main Function ===============================
 function DisplayedTasks(props) {
-
   // Render ====================================
   return (
     <div>
@@ -15,7 +14,7 @@ function DisplayedTasks(props) {
             <h3>{task.fields.exp} exp</h3>
           </Link>
           <Link to={`/edit/${task.id}`}>
-          <EditButton  />
+            <EditButton />
           </Link>
           <DoneButton />
         </div>
