@@ -1,12 +1,14 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function EditButton(props) {
-  function editHandle(e) {
-    
-  }
+  const editHandle = e => this.tasks(e.currentTarget.id);
+  
   return (
-    <div>
-      <button type="button" onClick={editHandle}>Edit</button>
+    <div className="edit-button">
+      <Link to = {`/edit/${editHandle}`} >
+        <button type="button" >Edit</button>
+        </Link>
     </div>
   );
 }

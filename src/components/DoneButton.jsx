@@ -5,7 +5,7 @@ function DoneButton(props) {
     
   }
   return (
-    <div>
+    <div className ="done-button">
       <button type="button" onClick={doneHandle}>JOB DONE</button>
     </div>
   );

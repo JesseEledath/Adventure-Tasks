@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import EditButton from "./EditButton";
+import DoneButton from "./DoneButton"
+// Main Function ===============================
 function DisplayedTasks(props) {
-  // const { task, exp, description, user } = props.task.fields;
-
+  // State for ID ====================================
+  const [id, setId] = useState("")
+  // Handle function ================================
+  const handleId = () => {
+  
+}
+  // Render ====================================
   return (
     <div>
       {props.tasks.map((task) => (
@@ -11,6 +19,8 @@ function DisplayedTasks(props) {
             <h3>{task.fields.title}</h3>
             <h3>{task.fields.exp} exp</h3>
           </Link>
+          <EditButton id={id} />
+          <DoneButton />
         </div>
       ))}
     </div>

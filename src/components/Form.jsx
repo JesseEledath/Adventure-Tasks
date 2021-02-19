@@ -5,7 +5,7 @@ import { baseURL, config } from "../services";
 // Function =============================================
 function Form(props) {
 // States =============================================
-  const [task, setTask] = useState("");
+  const [title, setTitle] = useState("");
   const [exp, setExp] = useState("");
   const [description, setDescription] = useState("");
   const [user, setUser] = useState("");
@@ -16,9 +16,10 @@ function Form(props) {
     if (props.tasks.length > 0 && params.id) {
       const foundTask = props.tasks.find((task) => params.id === task.id);
       if (foundTask) {
-        setTask(foundTask.fields.task);
+        setTitle(foundTask.fields.title);
         setExp(foundTask.fields.exp);
         setDescription(foundTask.fields.description);
+        setUser(foundTask.fields.user);
       }
     }
   }, [props.tasks, params.id]);
@@ -26,7 +27,7 @@ function Form(props) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
-      task,
+      title,
       exp,
       description,
       user,
@@ -43,12 +44,12 @@ function Form(props) {
 
   return (
     <form onSubmit={handleSubmit}>
-      <label htmlFor="task">Task:</label>
+      <label htmlFor="title">Title:</label>
       <input
-        id="task"
+        id="title"
         type="text"
-        value={task}
-        onChange={(e) => setTask(e.target.value)}
+        value={title}
+        onChange={(e) => setTitle(e.target.value)}
       />
       <label htmlFor="exp">Experince value of task: </label>
       <input
