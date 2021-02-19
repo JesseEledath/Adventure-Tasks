@@ -4,7 +4,6 @@ import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
 import DoneButton from "./components/DoneButton";
-import EditButton from "./components/EditButton";
 import Form from "./components/Form";
 import Level from "./components/Level";
 import NewTaskButton from "./components/NewTaskButton";

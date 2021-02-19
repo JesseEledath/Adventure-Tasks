@@ -1,15 +1,10 @@
-import React, { useState } from "react";
+import React from "react";
 import { Link } from "react-router-dom";
 import EditButton from "./EditButton";
 import DoneButton from "./DoneButton"
 // Main Function ===============================
 function DisplayedTasks(props) {
-  // State for ID ====================================
-  const [id, setId] = useState("")
-  // Handle function ================================
-  const handleId = () => {
-  
-}
+
   // Render ====================================
   return (
     <div>
@@ -19,7 +14,9 @@ function DisplayedTasks(props) {
             <h3>{task.fields.title}</h3>
             <h3>{task.fields.exp} exp</h3>
           </Link>
-          <EditButton id={id} />
+          <Link to={`/edit/${task.id}`}>
+          <EditButton  />
+          </Link>
           <DoneButton />
         </div>
       ))}
