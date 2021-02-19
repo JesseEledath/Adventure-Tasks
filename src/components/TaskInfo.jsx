@@ -15,11 +15,15 @@ function TaskInfo(props) {
     history.push("/");
   };
   const found = props.tasks.find((task) => task.id === params.id);
+  
   // Rendering =================================================
+  if (!found) {
+    return <h3>Loading...</h3>
+  }
   return (
     <div>
       <h3>{found.fields.title}</h3>
-      <h3>{found.fields.exp}</h3>
+      <h3>{found.fields.exp} exp</h3>
       <h4>{found.fields.description}</h4>
       <h4>Made by {found.fields.user} </h4>
       <button onClick={handleDelete}>Delete</button>

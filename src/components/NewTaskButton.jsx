@@ -1,12 +1,13 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function NewTaskHandle(props) {
-  function newTaskHandle(e) {
-    
-  }
+  
   return (
     <div>
-      <button type="button" onClick={newTaskHandle}>Edit</button>
+      <Link to ="/new">
+        <button type="button">New Task?</button>
+      </Link>
     </div>
   );
 }

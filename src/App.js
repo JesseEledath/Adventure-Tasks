@@ -7,7 +7,6 @@ import DoneButton from "./components/DoneButton";
 import EditButton from "./components/EditButton";
 import Form from "./components/Form";
 import Level from "./components/Level";
-import MobileHamburger from "./components/MobileHamburger";
 import NewTaskButton from "./components/NewTaskButton";
 import TaskInfo from "./components/TaskInfo";
 import DisplayedTasks from "./components/DisplayedTasks";
@@ -26,13 +25,14 @@ function App() {
   return (
     <div className="App">
       <Route exact path="/">
+        <NewTaskButton />
         <DisplayedTasks tasks={tasks} setToggleFetch={ setToggleFetch}/>
       </Route>
-      <Route path="/:id">
-        <TaskInfo tasks = {tasks} setToggleFetch={ setToggleFetch}/>
-      </Route>
-      <Route path="/new" >
+      <Route exact path="/new" >
         <Form tasks={tasks} setToggleFetch={ setToggleFetch}/>
+      </Route>
+      <Route path="/task/:id">
+        <TaskInfo tasks = {tasks} setToggleFetch={ setToggleFetch}/>
       </Route>
       <Route path="/edit/:id">
         <Form tasks={tasks} setToggleFetch={setToggleFetch} />
