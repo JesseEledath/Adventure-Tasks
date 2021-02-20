@@ -16,7 +16,7 @@ function DisplayedTasks(props) {
           <Link to={`/edit/${task.id}`}>
             <EditButton />
           </Link>
-          <DoneButton id={task.id} exp={task.fields.exp}/>
+          <DoneButton id={task.id} exp={task.fields.exp} setToggleFetch={props.setToggleFetch}/>
         </div>
       ))}
     </div>
