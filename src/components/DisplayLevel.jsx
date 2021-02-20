@@ -1,8 +1,9 @@
 import React, { useEffect, useState } from "react";
+import DoneButton from "./DoneButton";
 
-function Level(props) {
+function DisplayLevel(props) {
   // States =====================================
-  const [exp, setExp] = useState(0);
+  const [exp, setExp] = useState(0)
   const [level, setLevel] = useState(1);
   // UseEffect ==================================
   useEffect(() => {
@@ -39,14 +40,17 @@ function Level(props) {
     }
   }, [exp]);
   // Functions ==================================
-  function name(params) {}
+  function name(props) {
+
+  }
   // Render ======================================
   return (
     <div>
-      <h3>{level}</h3>
-      <h2>{exp}</h2>
+      <h2>Level {level}</h2>
+      <h3>Current {exp}</h3>
+<
     </div>
   );
 }
 
-export default Level;
+export default DisplayLevel;

@@ -3,9 +3,8 @@ import { useEffect, useState } from "react";
 import axios from "axios";
 import { Route } from "react-router-dom";
 import { baseURL, config } from "./services";
-import DoneButton from "./components/DoneButton";
 import Form from "./components/Form";
-import Level from "./components/Level";
+import DisplayLevel from "./components/DisplayLevel";
 import NewTaskButton from "./components/NewTaskButton";
 import TaskInfo from "./components/TaskInfo";
 import DisplayedTasks from "./components/DisplayedTasks";
@@ -26,6 +25,7 @@ function App() {
       <Route exact path="/">
         <NewTaskButton />
         <DisplayedTasks tasks={tasks} setToggleFetch={setToggleFetch} />
+        <DisplayLevel tasks={tasks}/>
       </Route>
       <Route exact path="/new">
         <Form tasks={tasks} setToggleFetch={setToggleFetch} />

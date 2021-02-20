@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import EditButton from "./EditButton";
 import DoneButton from "./DoneButton";
+import LevelInfo from "./LevelInfo"
 // Main Function ===============================
 function DisplayedTasks(props) {
   // Render ====================================
@@ -16,7 +17,8 @@ function DisplayedTasks(props) {
           <Link to={`/edit/${task.id}`}>
             <EditButton />
           </Link>
-          <DoneButton id={task.id} exp={task.fields.exp} setToggleFetch={props.setToggleFetch}/>
+          <DoneButton id={task.id} exp={task.fields.exp} setToggleFetch={props.setToggleFetch} />
+         
         </div>
       ))}
     </div>
