@@ -41,13 +41,7 @@ function Form(props) {
     props.setToggleFetch((curr) => !curr);
     history.push("/");
   };
-  // Change button text ==================================
-  let buttonText = <></>
-  if (params.id) {
-    buttonText = "Change"
-} else {
-  buttonText = "Submit"
-  }
+  // Rendering ==================================
   return (
     <form onSubmit={handleSubmit}>
       <label htmlFor="title">Title: </label>
@@ -78,7 +72,7 @@ function Form(props) {
         value={user}
         onChange={(e) => setUser(e.target.value)}
       />
-      <button type="submit">{buttonText}</button>
+      <button type="submit">{params.id ? "Change": "Submit"}</button>
     </form>
   );
 }

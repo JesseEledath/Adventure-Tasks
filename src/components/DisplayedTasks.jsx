@@ -16,7 +16,7 @@ function DisplayedTasks(props) {
           <Link to={`/edit/${task.id}`}>
             <EditButton />
           </Link>
-          <DoneButton />
+          <DoneButton id={task.id} exp={task.fields.exp}/>
         </div>
       ))}
     </div>
