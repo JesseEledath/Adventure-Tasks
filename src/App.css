@@ -8,17 +8,34 @@
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  grid-gap: 10px;
 }
 .task-container {
   background-color: rgba(130, 148, 162, 0.7);
+  
+}
+.task-container button{
+  margin:4px 4px 12px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+.task-container button:hover{
+  background-color: black;
+  color: #7CC095;
 }
 .new-task-button {
-  grid-column: span 2;
+  grid-column: 2 / 3;
   font-family: "DotGothic16";
   font-size: 1em;
+  width: auto;
+}
+.new-task-link{
+  grid-column: 2 / 3;
 }
 .level-info {
-  grid-row: span 2;
+  grid-column-start: span 1;
+  grid-column-end: 2;
 }
 .done-button {
   font-family: inherit;
@@ -36,20 +53,6 @@
   font-family: inherit;
   font-size: 1em;
 }
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-.done-button edit-button {
-  display: inline-block;
-}
-
 @media (max-width: 700px) {
   .App {
     text-align: center;
@@ -71,10 +74,9 @@
     margin: 8px;
     background-color: rgba(130, 148, 162, 0.7);
   }
-  .new-task-button{
-    position:fixed;
-    display:inherit;
+  .new-task-button {
+    position: fixed;
+    display: inherit;
     margin: 0px -12%;
-
   }
 }
