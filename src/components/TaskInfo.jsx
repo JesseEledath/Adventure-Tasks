@@ -26,7 +26,7 @@ function TaskInfo(props) {
       <h3>{found.fields.exp} exp</h3>
       <h4>{found.fields.description}</h4>
       <h4>Made by {found.fields.user} </h4>
-      <button onClick={handleDelete}>Delete</button>
+      <button onClick={handleDelete} className="delete-button">Delete</button>
     </div>
   );
 }

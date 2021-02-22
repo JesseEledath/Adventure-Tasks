@@ -13,8 +13,8 @@ function DoneButton(props) {
 
   // Render ============================
   return (
-    <div className="done-button">
-      <button type="button" onClick={handleDone}>
+    <div >
+      <button type="button" className="done-button" onClick={handleDone}>
         JOB DONE
       </button>
     </div>

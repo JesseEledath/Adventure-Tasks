@@ -22,7 +22,7 @@ function DisplayLevel(props) {
 
   // Render ======================================
   return (
-    <div>
+    <>
       <div className="level-info">
         <h2>Level {level}</h2>
         <h3>Current {exp}</h3>
@@ -35,7 +35,7 @@ function DisplayLevel(props) {
           currentExp={exp}
         />
       </div>
-    </div>
+    </>
   );
 }
 

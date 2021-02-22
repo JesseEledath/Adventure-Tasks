@@ -1,10 +1,41 @@
 .App {
   text-align: center;
   display: grid;
-  grid-gap: 1em;
   min-height: 100vh;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: 10em 1fr;
 }
-
+.tasks-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+.task-container {
+  background-color: rgba(130, 148, 162, 0.7);
+}
+.new-task-button {
+  grid-column: span 2;
+  font-family: "DotGothic16";
+  font-size: 1em;
+}
+.level-info {
+  grid-row: span 2;
+}
+.done-button {
+  font-family: inherit;
+  font-size: 1em;
+}
+.edit-button {
+  font-family: inherit;
+  font-size: 1em;
+}
+.submit-button {
+  font-family: inherit;
+  font-size: 1em;
+}
+.delete-button {
+  font-family: inherit;
+  font-size: 1em;
+}
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -19,11 +50,31 @@
   display: inline-block;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@media (max-width: 700px) {
+  .App {
+    text-align: center;
+    display: grid;
+    grid-gap: 1em;
+    min-height: 100vh;
+    grid-template-rows: auto auto 1fr;
+    grid-template-columns: auto;
   }
-  to {
-    transform: rotate(360deg);
+  .tasks-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .level-info {
+    max-height: 150px;
+    grid-row: span 1;
+  }
+  .task-container {
+    margin: 8px;
+    background-color: rgba(130, 148, 162, 0.7);
+  }
+  .new-task-button{
+    position:fixed;
+    display:inherit;
+    margin: 0px -12%;
+
   }
 }

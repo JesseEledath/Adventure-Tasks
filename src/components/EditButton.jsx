@@ -2,8 +2,8 @@ import React from "react";
 
 function EditButton(props) {
   return (
-    <div className="edit-button">
-      <button type="button">Edit</button>
+    <div >
+      <button type="button" className="edit-button">Edit</button>
     </div>
   );
 }

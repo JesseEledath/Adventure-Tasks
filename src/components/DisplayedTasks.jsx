@@ -6,9 +6,9 @@ import DoneButton from "./DoneButton";
 function DisplayedTasks(props) {
   // Render ====================================
   return (
-    <div>
+    <div className="tasks-grid">
       {props.tasks.map((task) => (
-        <div key={task.id} className="task-contianer">
+        <div key={task.id} className="task-container">
           <Link to={`/task/${task.id}`}>
             <h3>{task.fields.title}</h3>
             <h3>{task.fields.exp} exp</h3>
