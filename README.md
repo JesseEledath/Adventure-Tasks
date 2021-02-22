@@ -83,28 +83,27 @@ To have a task To-Do list type app that makes completing the tasks rewarding in 
 
 | Day       | Deliverable                                        | Status     |
 | --------- | -------------------------------------------------- | ---------- |
-| Feb 13-16 | Prompt / Wireframes / Priority Matrix / Timeframes | Incomplete |
-| Feb 16    | Project Approval                                   | Incomplete |
-| Feb 16    | Start Pseudocoding and creating components         | Incomplete |
-| Feb 17    | Develope core features (the tasks/ level system)   | Incomplete |
-| Feb 18    | Initial Clickable Model                            | Incomplete |
+| Feb 13-16 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
+| Feb 16    | Project Approval                                   | Complete |
+| Feb 16    | Start Pseudocoding and creating components         | Complete |
+| Feb 17    | Develope core features (the tasks/ level system)   | Complete |
+| Feb 18    | Initial Clickable Model                            | Complete |
 | Feb 19-20 | MVP/styling                                        | Incomplete |
 | Feb 23    | Presentations                                      | Incomplete |
 
 ## Timeframes
 
-| Component                      | Priority | Estimated Time | Time Invested | Actual Time |
-| ------------------------------ | :------: | :------------: | :-----------: | :---------: |
-| Initial React set up + API key |    H     |      1hrs      |               |             |
-| Working with API/creating info |    H     |      3hrs      |               |             |
-| Adding Form/requests           |    H     |      3hrs      |               |             |
-| Creating Tasks/formatting them |    H     |      3hrs      |               |             |
-| Creating sample Bio/Tasks      |    H     |      3hrs      |               |             |
-| Making Sidebar                 |    H     |      3hrs      |               |             |
-| Adding EXP elements            |    H     |      5hrs      |               |             |
-| Making titles                  |    H     |      3hrs      |               |             |
-| Adding Mobile hambuger menue   |    H     |      5hrs      |               |             |
-| Total                          |    H     |     29hrs      |               |             |
+| Component                      | Priority | Estimated Time | Time Invested |
+| ------------------------------ | :------: | :------------: | :-----------: |
+| Initial React set up + API key |    H     |      1hrs      |      1hr      |
+| Working with API/creating info |    H     |      3hrs      |      3hrs     |
+| Adding Form/requests           |    H     |      3hrs      |      3hrs     |
+| Creating Tasks/formatting them |    H     |      3hrs      |      3hrs     |
+| Creating sample Descriptions   |    H     |      3hrs      |      3hrs     |
+| Making Sidebar                 |    H     |      3hrs      |               |
+| Adding EXP elements            |    H     |      5hrs      |      6hrs     |
+| Making titles                  |    H     |      3hrs      |      N/A      |
+| Total                          |    H     |     29hrs      |               |
 
 ## SWOT Analysis
 
