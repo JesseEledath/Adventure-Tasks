@@ -4,14 +4,14 @@ import axios from "axios";
 import { baseURL, config } from "../services";
 // Function =============================================
 function Form(props) {
-// States =============================================
+  // States =============================================
   const [title, setTitle] = useState("");
   const [exp, setExp] = useState("");
   const [description, setDescription] = useState("");
   const [user, setUser] = useState("");
   const history = useHistory();
   const params = useParams();
-// UseEffect ============================================
+  // UseEffect ============================================
   useEffect(() => {
     if (props.tasks.length > 0 && params.id) {
       const foundTask = props.tasks.find((task) => params.id === task.id);
@@ -23,7 +23,7 @@ function Form(props) {
       }
     }
   }, [props.tasks, params.id]);
-// Handle function =========================================
+  // Handle function =========================================
   const handleSubmit = async (e) => {
     e.preventDefault();
     const fields = {
@@ -72,7 +72,7 @@ function Form(props) {
         value={user}
         onChange={(e) => setUser(e.target.value)}
       />
-      <button type="submit">{params.id ? "Change": "Submit"}</button>
+      <button type="submit">{params.id ? "Change" : "Submit"}</button>
     </form>
   );
 }

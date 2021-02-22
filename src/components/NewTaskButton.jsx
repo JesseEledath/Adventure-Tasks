@@ -1,11 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
 function NewTaskHandle(props) {
-  
   return (
-    <div>
-      <Link to ="/new">
+    <div className="new-task-button">
+      <Link to="/new">
         <button type="button">New Task?</button>
       </Link>
     </div>

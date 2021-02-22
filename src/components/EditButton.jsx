@@ -1,11 +1,9 @@
-import React from 'react';
+import React from "react";
 
 function EditButton(props) {
- 
-  
   return (
     <div className="edit-button">
-        <button type="button" >Edit</button>
+      <button type="button">Edit</button>
     </div>
   );
 }

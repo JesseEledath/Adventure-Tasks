@@ -7,7 +7,6 @@ import Form from "./components/Form";
 import DisplayLevel from "./components/DisplayLevel";
 import NewTaskButton from "./components/NewTaskButton";
 import TaskInfo from "./components/TaskInfo";
-import DisplayedTasks from "./components/DisplayedTasks";
 function App() {
   const [toggleFetch, setToggleFetch] = useState(false);
   const [tasks, setTasks] = useState([]);
@@ -24,8 +23,7 @@ function App() {
     <div className="App">
       <Route exact path="/">
         <NewTaskButton />
-        <DisplayedTasks tasks={tasks} setToggleFetch={setToggleFetch} />
-        <DisplayLevel tasks={tasks}/>
+        <DisplayLevel tasks={tasks} setToggleFetch={setToggleFetch} />
       </Route>
       <Route exact path="/new">
         <Form tasks={tasks} setToggleFetch={setToggleFetch} />

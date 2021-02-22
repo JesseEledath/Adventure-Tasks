@@ -1,5 +1,5 @@
 import React from "react";
-import { useParams,useHistory } from "react-router-dom";
+import { useParams, useHistory } from "react-router-dom";
 import axios from "axios";
 import { baseURL, config } from "../services";
 // Function ======================================
@@ -15,10 +15,10 @@ function TaskInfo(props) {
     history.push("/");
   };
   const found = props.tasks.find((task) => task.id === params.id);
-  
+
   // Rendering =================================================
   if (!found) {
-    return <h3>Loading...</h3>
+    return <h3>Loading...</h3>;
   }
   return (
     <div>
