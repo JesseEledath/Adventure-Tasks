@@ -5,6 +5,12 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 10em 1fr;
 }
+.task-info{
+  display:block;
+  position: absolute;
+  margin: 0px 40vw;
+}
+
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -13,24 +19,31 @@
 }
 .task-container {
   background-color: rgba(130, 148, 162, 0.7);
-  
 }
-.task-container button{
-  margin:4px 4px 12px;
+.task-container button {
+  margin: 4px 4px 12px;
   cursor: pointer;
   transition: all 0.2s;
 }
-.task-container button:hover{
+a{
+  cursor: pointer;
+  transition: all 0.2s
+}
+a:hover{
   background-color: black;
-  color: #7CC095;
+  color: #7cc095;
+}
+.task-container button:hover {
+  background-color: black;
+  color: #7cc095;
 }
 .new-task-button {
   grid-column: 2 / 3;
   font-family: "DotGothic16";
   font-size: 1em;
-  width: auto;
+  width: fit-content;
 }
-.new-task-link{
+.new-task-link {
   grid-column: 2 / 3;
 }
 .level-info {

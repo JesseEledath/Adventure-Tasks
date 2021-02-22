@@ -72,7 +72,9 @@ function Form(props) {
         value={user}
         onChange={(e) => setUser(e.target.value)}
       />
-      <button type="submit" className="submit-button">{params.id ? "Change" : "Submit"}</button>
+      <button type="submit" className="submit-button">
+        {params.id ? "Change" : "Submit"}
+      </button>
     </form>
   );
 }

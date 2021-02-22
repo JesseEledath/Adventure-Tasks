@@ -21,12 +21,14 @@ function TaskInfo(props) {
     return <h3>Loading...</h3>;
   }
   return (
-    <div>
+    <div className="task-info">
       <h3>{found.fields.title}</h3>
       <h3>{found.fields.exp} exp</h3>
       <h4>{found.fields.description}</h4>
       <h4>Made by {found.fields.user} </h4>
-      <button onClick={handleDelete} className="delete-button">Delete</button>
+      <button onClick={handleDelete} className="delete-button">
+        Delete
+      </button>
     </div>
   );
 }

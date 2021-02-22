@@ -1,5 +1,7 @@
 ## Adventure-Tasks
+
 [Deployed Adventure-Tasks](https://stoic-goldberg-8ae47a.netlify.app)
+
 ## Adventure-Tasks Description
 
 To have a task To-Do list type app that makes completing the tasks rewarding in an RPG-style way. Giving user determined "experience" for clicking Done for whatever they need accomplished that day.
@@ -81,28 +83,29 @@ To have a task To-Do list type app that makes completing the tasks rewarding in 
 
 ## Project Schedule
 
-| Day       | Deliverable                                        | Status     |
-| --------- | -------------------------------------------------- | ---------- |
+| Day       | Deliverable                                        | Status   |
+| --------- | -------------------------------------------------- | -------- |
 | Feb 13-16 | Prompt / Wireframes / Priority Matrix / Timeframes | Complete |
 | Feb 16    | Project Approval                                   | Complete |
 | Feb 16    | Start Pseudocoding and creating components         | Complete |
 | Feb 17    | Develope core features (the tasks/ level system)   | Complete |
 | Feb 18    | Initial Clickable Model                            | Complete |
-| Feb 19-20 | MVP/styling                                        | Incomplete |
-| Feb 23    | Presentations                                      | Incomplete |
+| Feb 19-20 | MVP/styling                                        | Complete |
+| Feb 23    | Presentations                                      | Complete |
 
 ## Timeframes
 
 | Component                      | Priority | Estimated Time | Time Invested |
 | ------------------------------ | :------: | :------------: | :-----------: |
 | Initial React set up + API key |    H     |      1hrs      |      1hr      |
-| Working with API/creating info |    H     |      3hrs      |      3hrs     |
-| Adding Form/requests           |    H     |      3hrs      |      3hrs     |
-| Creating Tasks/formatting them |    H     |      3hrs      |      3hrs     |
-| Creating sample Descriptions   |    H     |      3hrs      |      3hrs     |
-| Making Sidebar                 |    H     |      3hrs      |               |
-| Adding EXP elements            |    H     |      5hrs      |      6hrs     |
+| Working with API/creating info |    H     |      3hrs      |     3hrs      |
+| Adding Form/requests           |    H     |      3hrs      |     3hrs      |
+| Creating Tasks/formatting them |    H     |      3hrs      |     3hrs      |
+| Creating sample Descriptions   |    H     |      3hrs      |     3hrs      |
+| Making Sidebar                 |    H     |      3hrs      |     1hrs      |
+| Adding EXP elements            |    H     |      5hrs      |     6hrs      |
 | Making titles                  |    H     |      3hrs      |      N/A      |
+| Styling                        |    H     |      3hrs      |     5hrs      |
 | Total                          |    H     |     29hrs      |               |
 
 ## SWOT Analysis

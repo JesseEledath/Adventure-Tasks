@@ -1,9 +1,6 @@
 body {
   margin: 0;
-  display: grid;
-  font-family: -apple-system,
-    'DotGothic16',
-    sans-serif;
+  font-family: -apple-system, "DotGothic16", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-image: url("./fantasy_background.jpg");
@@ -11,9 +8,9 @@ body {
 }
 a {
   text-decoration: none;
-  color: #7CC095;
+  color: #7cc095;
 }
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
 }
