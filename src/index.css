@@ -6,6 +6,13 @@ body {
   background-image: url("./fantasy_background.jpg");
   background-size: 100vw 100vh;
 }
+@media (max-width: 625px) {
+  body{
+    background-size: cover;
+    min-height: 100vh;
+    background-position-x: 70%;
+  }
+}
 a {
   text-decoration: none;
   color: #7cc095;

@@ -11,6 +11,9 @@
   margin: 0px 40vw;
 }
 
+textarea {
+  resize: vertical;
+}
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -29,10 +32,7 @@ a{
   cursor: pointer;
   transition: all 0.2s
 }
-a:hover{
-  background-color: black;
-  color: #7cc095;
-}
+
 .task-container button:hover {
   background-color: black;
   color: #7cc095;
@@ -40,8 +40,9 @@ a:hover{
 .new-task-button {
   grid-column: 2 / 3;
   font-family: "DotGothic16";
-  font-size: 1em;
-  width: fit-content;
+  font-size: 2em;
+  width: 90%;
+  margin: 10px;
 }
 .new-task-link {
   grid-column: 2 / 3;
@@ -66,7 +67,7 @@ a:hover{
   font-family: inherit;
   font-size: 1em;
 }
-@media (max-width: 700px) {
+@media (max-width: 625px) {
   .App {
     text-align: center;
     display: grid;
@@ -91,5 +92,6 @@ a:hover{
     position: fixed;
     display: inherit;
     margin: 0px -12%;
+    font-size: 1em;
   }
 }
