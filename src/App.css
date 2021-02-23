@@ -5,8 +5,8 @@
   grid-template-rows: auto 1fr auto;
   grid-template-columns: 10em 1fr;
 }
-.task-info{
-  display:block;
+.task-info {
+  display: block;
   position: absolute;
   margin: 0px 40vw;
 }
@@ -16,7 +16,7 @@
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
 }
-.form{
+.form {
   display: grid;
   grid-column-start: span 1;
   grid-column-end: 3;
@@ -30,9 +30,9 @@
   cursor: pointer;
   transition: all 0.2s;
 }
-a{
+a {
   cursor: pointer;
-  transition: all 0.2s
+  transition: all 0.2s;
 }
 
 .task-container button:hover {

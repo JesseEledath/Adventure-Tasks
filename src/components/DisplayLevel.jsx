@@ -7,18 +7,18 @@ function DisplayLevel(props) {
   const [level, setLevel] = useState(1);
   // UseEffect ==================================
   useEffect(() => {
+    const storedExp = localStorage.getItem("storedExp");
+    const storedLevel = localStorage.getItem("storedLevel");
+    setExp(storedExp);
+    setLevel(storedLevel);
+  }, []);
+  useEffect(() => {
     const expArray = [100, 210, 320, 400, 520, 630, 730, 840, 960];
     const newLevel = expArray.findIndex((expLevel) => expLevel > exp) + 1;
     setLevel(newLevel);
     localStorage.setItem("storedExp", exp);
     localStorage.setItem("storedLevel", level);
   }, [exp, level]);
-  useEffect(() => {
-    const storedExp = localStorage.getItem("storedExp");
-    const storedLevel = localStorage.getItem("storedLevel");
-    setExp(storedExp);
-    setLevel(storedLevel);
-  }, []);
 
   // Render ======================================
   return (

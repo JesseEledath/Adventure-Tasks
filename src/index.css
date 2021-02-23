@@ -7,7 +7,7 @@ body {
   background-size: 100vw 100vh;
 }
 @media (max-width: 625px) {
-  body{
+  body {
     background-size: cover;
     min-height: 100vh;
     background-position-x: 70%;
