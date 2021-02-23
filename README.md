@@ -1,6 +1,6 @@
 ## Adventure-Tasks
 
-[Deployed Adventure-Tasks](https://stoic-goldberg-8ae47a.netlify.app)
+[Deployed Adventure-Tasks](https://adventure-tasks.netlify.app)
 
 ## Adventure-Tasks Description
 
