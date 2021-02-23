@@ -10,15 +10,17 @@
   position: absolute;
   margin: 0px 40vw;
 }
-
-textarea {
-  resize: vertical;
-}
 .tasks-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
   grid-gap: 10px;
+}
+.form{
+  display: grid;
+  grid-column-start: span 1;
+  grid-column-end: 3;
+  margin-right: 10%;
 }
 .task-container {
   background-color: rgba(130, 148, 162, 0.7);

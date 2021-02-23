@@ -43,7 +43,7 @@ function Form(props) {
   };
   // Rendering ==================================
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form">
       <label htmlFor="title">Title: </label>
       <input
         id="title"
