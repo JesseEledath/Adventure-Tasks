@@ -5,7 +5,8 @@ import axios from "axios";
 function DoneButton(props) {
   // Handle function ========================
   const handleDone = async () => {
-    props.setExp(props.currentExp + props.exp);
+const newExp = (parseInt(props.currentExp) + props.exp)
+    props.setExp(newExp);
     const taskURL = `${baseURL}/${props.id}`;
     await axios.delete(taskURL, config);
     props.setToggleFetch((curr) => !curr);

@@ -6,7 +6,7 @@ import { baseURL, config } from "../services";
 function Form(props) {
   // States =============================================
   const [title, setTitle] = useState("");
-  const [exp, setExp] = useState(0);
+  const [exp, setExp] = useState("");
   const [description, setDescription] = useState("");
   const [user, setUser] = useState("");
   const history = useHistory();
